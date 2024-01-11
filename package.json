@@ -1,0 +1,20 @@
+{
+  "name": "test-lit",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && esbuild src/app-element.ts --bundle --splitting --format=esm --outdir=dist",
+    "start": "serve ."
+  },
+  "dependencies": {
+    "@vaadin/checkbox": "24.4.0-alpha3",
+    "@vaadin/checkbox-group": "24.4.0-alpha3",
+    "lit": "^3.0.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.11",
+    "rimraf": "^5.0.5",
+    "serve": "^14.2.1"
+  }
+}
